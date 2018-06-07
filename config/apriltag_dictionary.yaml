@@ -1,0 +1,101 @@
+%YAML:1.0
+
+#total tag number
+6
+
+#AprilTag 0
+id_0: 0
+size_0: 6
+TagRotation_0: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [1, 0, 0, 
+           0, 1, 0, 
+           0, 0, 1]
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [0, 0, 0]
+
+#AprilTag 1
+id_0: 1
+size_0: 6
+TagRotation_0: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [1, 0, 0, 
+           0, 1, 0, 
+           0, 0, 1]
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [50, 0, 0]
+
+#AprilTag 2
+id_0: 2
+size_0: 6
+TagRotation_0: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [1, 0, 0, 
+           0, 1, 0, 
+           0, 0, 1]
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [0, 50, 0]
+
+#AprilTag 3
+id_0: 3
+size_0: 6
+TagRotation_0: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [1, 0, 0, 
+           0, 1, 0, 
+           0, 0, 1]
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [-50, 0, 0]
+
+#AprilTag 4
+id_0: 4
+size_0: 6
+TagRotation_0: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [1, 0, 0, 
+           0, 1, 0, 
+           0, 0, 1]
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [0, -50, 0]
+
+#AprilTag 5
+id_0: 5
+size_0: 6
+TagRotation_0: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [1, 0, 0, 
+           0, 1, 0, 
+           0, 0, 1]
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [30, 25, 0]
+

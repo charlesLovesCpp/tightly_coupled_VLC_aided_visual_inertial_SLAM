@@ -1,0 +1,13 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x1a\x00t\x00a\x00g\x00_\x00e\x00s\x00t\x00i\x00m\x00a\x00t\x00o\x00r)
+
+[CMake]
+ProjectRootRelative=./
+
+[Defines And Includes][Compiler]
+Name=GCC
+Path=gcc
+Type=GCC
+
+[Project]
+VersionControlSupport=kdevgit

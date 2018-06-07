@@ -1,0 +1,16 @@
+<launch>
+	<arg name="config_path" default="$(find tag_tracker)/../config/mynteye/mynteye_config.yaml"/>
+	<arg name="tag_path" default="$(find tag_tracker)/../config/apriltag_dictionary.yaml"/>
+	<arg name="vins_path" default="$(find tag_tracker)/../config/mynteye/"/>
+
+	<node name="tag_tracker" pkg="tag_tracker" type="tag_tracker" output="screen">
+		<param name="config_file" type="string" value="$(arg config_path)"/>
+		<param name="vins_folder" type="string" value="$(arg vins_path)"/>
+	</node>
+
+	<node name="tag_estimator" pkg="tag_estimator" type="tag_estimator" output="screen">
+		<param name="config_file" type="string" value="$(arg config_path)"/>
+		<param name="tag_file" type="string" value="$(arg tag_path)"/>
+		<param name="vins_folder" type="string" value="$(arg vins_path)"/>
+	</node>
+</launch>

@@ -1,0 +1,33 @@
+<launch>
+	<arg name="config_path" default="$(find tag_tracker)/../config/mynteye/mynteye_config.yaml"/>
+	<arg name="vins_path" default="$(find tag_tracker)/../config/../"/>
+
+	<node name="tag_tracker" pkg="tag_tracker" type="tag_tracker" output="screen">
+		<param name="config_file" type="string" value="$(arg config_path)"/>
+		<param name="vins_folder" type="string" value="$(arg vins_path)"/>
+
+   		<!-- Optional: Subscribe to the compressed stream-->
+    		<param name="image_transport" type="str" value="compressed" />
+
+    		<!-- Select the tag family: 16h5, 25h7, 25h9, 36h9, or 36h11(default) -->
+    		<param name="tag_family" type="str" value="36h11" />
+
+    		<!-- Enable projected optical measurements for more accurate tag transformations -->
+    		<!-- This exists for backwards compatability and should be left true for new setups -->
+    		<param name="projected_optics" type="bool" value="true" />
+
+		    <!-- Describe the tags -->
+			<rosparam param="tag_descriptions">[
+{id: 0, size: 0.163513},
+{id: 1, size: 0.163513, frame_id: a_frame},
+{id: 2, size: 0.163513, frame_id: tag_2},
+{id: 3, size: 0.163513},
+{id: 4, size: 0.163513},
+{id: 5, size: 0.163513}]</rosparam>
+	</node>
+
+	<node name="tag_estimator" pkg="tag_estimator" type="tag_estimator" output="screen">
+		<param name="config_file" type="string" value="$(arg config_path)"/>
+		<param name="vins_folder" type="string" value="$(arg vins_path)"/>
+	</node>
+</launch>
