@@ -12,6 +12,10 @@ Relative two paper has been submitted to IEEE photonic technology letter and Chi
 
 **Note:** Considering that our research only focuses on demonstrating new positioning algorithm, it is fair to replace the LEDs with other alternatives such as April Tags (ATs)[1], a kind of QR-code-like visual patterns whose IDs can also be recognized by the camera, as long as no influence is made to the positioning performance. The realistic experimental setup and ATs can be seen as follows. 
 
+![image](https://github.com/charlesLovesCpp/Tightly-coupled-inertial-VLC-positioning-system/blob/master/fig_positioning.jpg)
+
+![image](https://github.com/charlesLovesCpp/Tightly-coupled-inertial-VLC-positioning-system/blob/master/fig_real_sensor.jpg)
+
 [1] A robust and flexible visual fiducial system, in Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), 2011
 
 ---
