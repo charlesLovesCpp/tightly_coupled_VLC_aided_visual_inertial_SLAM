@@ -2,7 +2,7 @@
 ---
 Authors: Chao qin from Shanghai Jiao Tong University
 
-Relative paper has been submitted to IEEE photonic technology letter.
+Relative two paper has been submitted to IEEE photonic technology letter and Chinese optic letter.
 
 ---
 
